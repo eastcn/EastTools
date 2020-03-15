@@ -32,7 +32,7 @@ def push():
     ]
     try:
         print(f"当前时间：{datetime.datetime.now()}，执行提醒")
-        requests.get(f"http://eastfly.top:8080/YS277KEBhxZ4jh7gT9YJnL/TakeARest/{random.choice(words)}")
+        requests.get(f"domain/token/title/{random.choice(words)}")
     except Exception:
         print("push error")
         traceback.print_exc()
